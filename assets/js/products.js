@@ -1,14 +1,14 @@
 window.SHOWROOM_PRODUCTS=[
   {
-    id:'imperial-derby',
-    name:'Imperial Derby',
-    type:'Executive Derby',
+    id:'executive-oxford',
+    name:'Executive Oxford',
+    type:'Premium Cap-Toe Oxford',
     category:'Corporate Shoes',
     label:'Boardroom Essential',
     price:'$420',
-    specs:['Full-grain leather','Leather lining','Cushioned sole'],
-    detail:'A structured Derby built for polished business dressing, with a clean profile and considered comfort for long working days.',
-    image:'https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=1200&q=85'
+    specs:['Polished leather upper','Leather lining','Cushioned sole'],
+    detail:'A classic cap-toe Oxford with a refined corporate silhouette, designed for tailored suits, boardrooms and formal professional occasions.',
+    image:'https://images.unsplash.com/photo-1563434194539-fcc823f9bf92?auto=format&fit=crop&w=1200&q=85'
   },
   {
     id:'regent-sandal',
