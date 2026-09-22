@@ -56,9 +56,11 @@ document.addEventListener('DOMContentLoaded',function(){
             '<span class="product-view-label">View piece <span class="ml-2">→</span></span>'+
           '</div>'+
         '</div>'+
-        '<div class="product-meta flex items-end justify-between gap-4 px-1 py-5">'+
-          '<div><p class="font-display text-2xl sm:text-3xl">'+escapeHtml(p.name)+'</p><p class="mt-1 text-[10px] uppercase tracking-[.18em] text-bone/40">'+escapeHtml(p.category)+'</p></div>'+
-          '<span class="text-xs text-champagne">'+escapeHtml(p.price)+'</span>'+
+        '<div class="product-meta">'+
+          '<div class="product-copy">'+
+            '<div><p class="product-name font-display text-2xl sm:text-3xl">'+escapeHtml(p.name)+'</p><p class="product-category">'+escapeHtml(p.category)+'</p></div>'+
+            '<span class="product-price">'+escapeHtml(p.price)+'</span>'+
+          '</div>'+
         '</div>'+
       '</a>'
     }).join('');
