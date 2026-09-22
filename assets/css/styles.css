@@ -63,3 +63,27 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opa
 html{scroll-behavior:auto}
 .hero-media,.product-card .product-image,.image-frame img,.reveal,.magnetic,.product-hover-details,.product-shade,.product-label{transition:none!important;transform:none!important}
 }
+
+@media(max-width:767px){
+  .site-header nav{min-height:4.5rem}
+  .site-header #mobileMenu{
+    position:absolute;
+    left:0;
+    right:0;
+    top:100%;
+    border-top:1px solid rgba(244,240,232,.1);
+    background:rgba(10,10,9,.96);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    padding:1rem 1.5rem 1.5rem;
+  }
+  .site-header #mobileMenu a{
+    display:block;
+    padding:.9rem 0;
+    color:rgba(244,240,232,.72);
+    border-bottom:1px solid rgba(244,240,232,.07);
+    transition:color .3s ease;
+  }
+  .site-header #mobileMenu a:last-child{border-bottom:0}
+  .site-header #mobileMenu a:hover{color:var(--bone)}
+}
