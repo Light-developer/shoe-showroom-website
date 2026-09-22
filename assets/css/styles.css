@@ -57,6 +57,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opa
 .product-specs li{font-size:.55rem}
 .product-category{font-size:.52rem;letter-spacing:.16em}
 .product-price{font-size:.66rem}
+.hero + #collection{padding-top:5rem}
 }
 @media (prefers-reduced-motion:reduce){
 html{scroll-behavior:auto}
