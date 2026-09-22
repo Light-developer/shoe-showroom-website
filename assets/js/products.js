@@ -8,7 +8,7 @@ window.SHOWROOM_PRODUCTS=[
     price:'$420',
     specs:['Polished leather upper','Leather lining','Cushioned sole'],
     detail:'A classic cap-toe Oxford with a refined corporate silhouette, designed for tailored suits, boardrooms and formal professional occasions.',
-    image:'https://images.unsplash.com/photo-1563434194539-fcc823f9bf92?auto=format&fit=crop&w=1200&q=85'
+    image:'https://images.unsplash.com/photo-1542702942-01343dd60a84?auto=format&fit=crop&w=1200&q=85'
   },
   {
     id:'regent-sandal',
