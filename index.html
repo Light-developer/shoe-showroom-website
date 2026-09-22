@@ -1,113 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aurelius — premium corporate footwear for those who move with intent.">
-  <title>Aurelius — Presence, perfected.</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: '#0a0a09',
-            bone: '#f4f0e8',
-            champagne: '#c9a66b',
-            stoneink: '#8e8a82'
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Cormorant Garamond', 'serif']
-          }
-        }
-      }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aurelius — premium corporate footwear for those who move with intent.">
+<title>Aurelius — Presence, perfected.</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{ink:'#0a0a09',bone:'#f4f0e8',champagne:'#c9a66b',stoneink:'#8e8a82'},fontFamily:{sans:['Inter','sans-serif'],display:['Cormorant Garamond','serif']}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body class="bg-ink text-bone antialiased">
-  <header class="site-header fixed inset-x-0 top-0 z-50">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10" aria-label="Main navigation">
-      <a href="./index.html" class="font-display text-2xl tracking-[0.28em]" aria-label="Aurelius home">AURELIUS</a>
-      <div class="hidden items-center gap-9 md:flex">
-        <a class="nav-link" href="#collection">Collection</a>
-        <a class="nav-link" href="#craft">Craft</a>
-        <a class="nav-link" href="#house">The House</a>
-      </div>
-      <a href="#collection" class="hidden rounded-full border border-bone/30 px-5 py-2 text-xs uppercase tracking-[0.2em] transition hover:border-champagne hover:text-champagne md:inline-flex">Enter showroom</a>
-      <button id="menuButton" class="md:hidden" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
-        <span class="block h-px w-7 bg-bone"></span><span class="mt-2 block h-px w-7 bg-bone"></span>
-      </button>
-    </nav>
-    <div id="mobileMenu" class="hidden border-t border-bone/10 bg-ink px-6 py-8 md:hidden">
-      <a href="#collection" class="block py-3 text-sm uppercase tracking-[0.2em]">Collection</a>
-      <a href="#craft" class="block py-3 text-sm uppercase tracking-[0.2em]">Craft</a>
-      <a href="#house" class="block py-3 text-sm uppercase tracking-[0.2em]">The House</a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero relative flex min-h-screen items-end overflow-hidden">
-      <div class="hero-media absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=2200&q=85" alt="Premium leather shoe" class="h-full w-full object-cover object-center">
-      </div>
-      <div class="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/35 to-transparent"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/20"></div>
-      <div class="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 lg:px-10 lg:pb-28">
-        <p class="eyebrow mb-5 text-xs uppercase tracking-[0.35em] text-champagne">The Executive Collection · 2026</p>
-        <h1 class="max-w-4xl font-display text-6xl leading-[0.88] sm:text-7xl lg:text-9xl">Presence,<br>perfected.</h1>
-        <p class="mt-7 max-w-lg text-sm leading-7 text-bone/70 sm:text-base">Corporate footwear designed around the quiet confidence of impeccable detail.</p>
-        <a href="#collection" class="magnetic group mt-9 inline-flex items-center gap-8 border border-bone/30 px-7 py-4 text-xs uppercase tracking-[0.24em] transition hover:border-champagne">
-          Explore the collection <span class="transition-transform duration-500 group-hover:translate-x-2">→</span>
-        </a>
-      </div>
-    </section>
-
-    <section id="collection" class="px-6 py-28 lg:px-10 lg:py-40">
-      <div class="mx-auto max-w-7xl">
-        <div class="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
-          <div>
-            <p class="eyebrow text-xs uppercase tracking-[0.3em] text-champagne">01 / Showroom</p>
-            <h2 class="mt-4 font-display text-5xl sm:text-6xl">The collection</h2>
-          </div>
-          <p class="max-w-md text-sm leading-7 text-bone/55">Three silhouettes. One philosophy: restraint, precision and an unmistakable sense of arrival.</p>
-        </div>
-        <div id="productGrid" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3" aria-live="polite"></div>
-      </div>
-    </section>
-
-    <section id="craft" class="overflow-hidden px-6 py-20 lg:px-10 lg:py-32">
-      <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-24">
-        <div class="reveal">
-          <p class="eyebrow text-xs uppercase tracking-[0.3em] text-champagne">02 / Craft</p>
-          <h2 class="mt-5 font-display text-6xl leading-none sm:text-7xl">Built to be remembered.</h2>
-          <p class="mt-8 max-w-xl text-sm leading-8 text-bone/60">Every line is considered. Every surface is finished with intention. Aurelius pairs timeless corporate silhouettes with the discipline of modern craftsmanship.</p>
-        </div>
-        <div class="image-frame reveal aspect-[4/5] overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?auto=format&fit=crop&w=1400&q=85" alt="Crafted luxury interior" class="h-full w-full object-cover">
-        </div>
-      </div>
-    </section>
-
-    <section id="house" class="px-6 py-28 lg:px-10 lg:py-40">
-      <div class="mx-auto max-w-5xl text-center">
-        <p class="eyebrow text-xs uppercase tracking-[0.3em] text-champagne">03 / The House</p>
-        <h2 class="mt-6 font-display text-6xl leading-[0.9] sm:text-8xl">For those who move with intent.</h2>
-        <p class="mx-auto mt-8 max-w-2xl text-sm leading-8 text-bone/55">Enter a private showroom experience built around your wardrobe, your schedule and the occasions that matter.</p>
-        <a href="mailto:concierge@aurelius.example" class="magnetic group mt-10 inline-flex items-center gap-8 rounded-full bg-bone px-8 py-4 text-xs uppercase tracking-[0.2em] text-ink transition hover:bg-champagne">Speak with concierge <span class="transition-transform duration-500 group-hover:translate-x-2">→</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t border-bone/10 px-6 py-8 lg:px-10">
-    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs uppercase tracking-[0.18em] text-bone/40 sm:flex-row">
-      <span>Aurelius · Executive footwear</span><span>© 2026 Aurelius</span>
-    </div>
-  </footer>
-  <script src="./assets/js/main.js"></script>
-</body>
-</html>
+<header class="site-header fixed inset-x-0 top-0 z-50"><nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10" aria-label="Main navigation">
+<a href="./index.html" class="font-display text-2xl tracking-[0.28em]" aria-label="Aurelius home">AURELIUS</a>
+<div class="hidden items-center gap-9 md:flex"><a class="nav-link" href="#collection">Collection</a><a class="nav-link" href="#craft">Craft</a><a class="nav-link" href="#house">The House</a></div>
+<a href="#collection" class="hidden rounded-full border border-bone/30 px-5 py-2 text-xs uppercase tracking-[0.2em] transition hover:border-champagne hover:text-champagne md:inline-flex">Enter showroom</a>
+<button id="menuButton" class="md:hidden" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span class="block h-px w-7 bg-bone"></span><span class="mt-2 block h-px w-7 bg-bone"></span></button>
+</nav><div id="mobileMenu" class="hidden border-t border-bone/10 bg-ink px-6 py-8 md:hidden"><a href="#collection" class="block py-3 text-sm uppercase tracking-[0.2em]">Collection</a><a href="#craft" class="block py-3 text-sm uppercase tracking-[0.2em]">Craft</a><a href="#house" class="block py-3 text-sm uppercase tracking-[0.2em]">The House</a></div></header>
+<main>
+<section class="hero relative flex min-h-screen items-end overflow-hidden"><div class="hero-media absolute inset-0"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=2200&q=85" alt="Premium leather shoe" class="h-full w-full object-cover object-center"></div><div class="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/35 to-transparent"></div><div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/20"></div><div class="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 lg:px-10 lg:pb-28"><p class="eyebrow mb-5 text-xs uppercase tracking-[0.35em] text-champagne">The Executive Collection · 2026</p><h1 class="max-w-4xl font-display text-6xl leading-[0.88] sm:text-7xl lg:text-9xl">Presence,<br>perfected.</h1><p class="mt-7 max-w-lg text-sm leading-7 text-bone/70 sm:text-base">Corporate footwear designed around the quiet confidence of impeccable detail.</p><a href="#collection" class="magnetic group mt-9 inline-flex items-center gap-8 border border-bone/30 px-7 py-4 text-xs uppercase tracking-[0.24em] transition hover:border-champagne">Explore the collection <span class="transition-transform duration-500 group-hover:translate-x-2">→</span></a></div></section>
+<section id="collection" class="px-6 py-28 lg:px-10 lg:py-40"><div class="mx-auto max-w-7xl">
+<div class="mb-10 flex flex-col justify-between gap-6 md:flex-row md:items-end"><div><p class="eyebrow text-xs uppercase tracking-[0.3em] text-champagne">01 / Showroom</p><h2 class="mt-4 font-display text-5xl sm:text-6xl">The collection</h2></div><p class="max-w-md text-sm leading-7 text-bone/55">Three silhouettes. One philosophy: restraint, precision and an unmistakable sense of arrival.</p></div>
+<div class="showroom-controls mb-10 border-y border-bone/10 py-5"><div class="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between"><div id="categoryTabs" class="category-tabs flex gap-2 overflow-x-auto pb-1" role="tablist" aria-label="Filter collection"></div><p id="collectionCount" class="shrink-0 text-[10px] uppercase tracking-[0.2em] text-bone/35"></p></div></div>
+<div id="productGrid" class="grid gap-x-5 gap-y-12 sm:grid-cols-2 lg:grid-cols-3" aria-live="polite"></div>
+<p id="emptyCollection" class="hidden py-20 text-center font-display text-3xl text-bone/50">The collection is being refined.</p>
+</div></section>
+<section id="craft" class="overflow-hidden px-6 py-20 lg:px-10 lg:py-32"><div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-24"><div class="reveal"><p class="eyebrow text-xs uppercase tracking-[0.3em] text-champagne">02 / Craft</p><h2 class="mt-5 font-display text-6xl leading-none sm:text-7xl">Built to be remembered.</h2><p class="mt-8 max-w-xl text-sm leading-8 text-bone/60">Every line is considered. Every surface is finished with intention. Aurelius pairs timeless corporate silhouettes with the discipline of modern craftsmanship.</p></div><div class="image-frame reveal aspect-[4/5] overflow-hidden"><img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?auto=format&fit=crop&w=1400&q=85" alt="Crafted luxury interior" class="h-full w-full object-cover"></div></div></section>
+<section id="house" class="px-6 py-28 lg:px-10 lg:py-40"><div class="mx-auto max-w-5xl text-center"><p class="eyebrow text-xs uppercase tracking-[0.3em] text-champagne">03 / The House</p><h2 class="mt-6 font-display text-6xl leading-[0.9] sm:text-8xl">For those who move with intent.</h2><p class="mx-auto mt-8 max-w-2xl text-sm leading-8 text-bone/55">Enter a private showroom experience built around your wardrobe, your schedule and the occasions that matter.</p><a href="mailto:concierge@aurelius.example" class="magnetic group mt-10 inline-flex items-center gap-8 rounded-full bg-bone px-8 py-4 text-xs uppercase tracking-[0.2em] text-ink transition hover:bg-champagne">Speak with concierge <span class="transition-transform duration-500 group-hover:translate-x-2">→</span></a></div></section>
+</main>
+<footer class="border-t border-bone/10 px-6 py-8 lg:px-10"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-xs uppercase tracking-[0.18em] text-bone/40 sm:flex-row"><span>Aurelius · Executive footwear</span><span>© 2026 Aurelius</span></div></footer>
+<script src="./assets/js/products.js"></script><script src="./assets/js/main.js"></script>
+</body></html>
